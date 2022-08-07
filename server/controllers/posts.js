@@ -6,26 +6,47 @@ import PostMessage from "../models/postMessage.js";
 const router = express.Router();
 
 export const getPosts = async (req, res) => {
+  const { page } = req.query;
+  
   try {
-    const postMessages = await PostMessage.find();
+    const LIMIT = 6;
+    const startIndex = (Number(page) - 1) * LIMIT; //Get starting index every page
+    const total = await PostMessage.countDocuments({});
 
-    res.status(200).json(postMessages);
+    const posts = await PostMessage.find().sort({ _id: -1 }).limit(LIMIT).skip(startIndex);
+
+    res.status(200).json({ data: posts, currentPage: Number(page), numberOfPages: Math.ceil(total / LIMIT) });
   } catch (error) {
     res.status(404).json({ message: error.message });
   }
 };
 
-export const getPost = async (req, res) => {
-  const { id } = req.params;
-
+export const getPostsBySearch = async (req, res) => {
+  const { searchQuery, tags } = req.query;
+  
   try {
-    const post = await PostMessage.findById(id);
+    const lecturer = new RegExp(searchQuery, 'i');
 
-    res.status(200).json(post);
+    const posts = await PostMessage.find({ $or: [ { lecturer }, {tags: { $in: tags.split(',') } } ] });
+  
+    res.json({ data: posts });
+
   } catch (error) {
-    res.status(404).json({ message: error.message });
+    res.status(404).json({ message: error.message });   
   }
-};
+}
+
+// export const getPost = async (req, res) => {
+//   const { id } = req.params;
+
+//   try {
+//     const post = await PostMessage.findById(id);
+
+//     res.status(200).json(post);
+//   } catch (error) {
+//     res.status(404).json({ message: error.message });
+//   }
+// };
 
 export const createPost = async (req, res) => {
   const post = req.body;
@@ -47,12 +68,12 @@ export const createPost = async (req, res) => {
 
 export const updatePost = async (req, res) => {
   const { id } = req.params;
-  const { lecturer, message, creator, selectedFile, tags } = req.body;
+  const { name, lecturer, description, creator, selectedFile, tags, likes } = req.body;
 
   if (!mongoose.Types.ObjectId.isValid(id))
     return res.status(404).send(`No post with id: ${id}`);
 
-  const updatedPost = { creator, lecturer, message, tags, selectedFile, _id: id };
+  const updatedPost = { name, creator, lecturer, description, tags, selectedFile, _id: id, likes };
 
   await PostMessage.findByIdAndUpdate(id, updatedPost, { new: true });
 

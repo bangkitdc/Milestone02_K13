@@ -7,7 +7,7 @@ import useStyles from "./styles";
 import { createPost, updatePost } from '../../actions/posts';
 
 const Form = ({ currentId, setCurrentId }) => {
-    const [postData, setPostData] = useState({ lecturer: '', description: '', tags: '', selectedFile: '' });
+    const [postData, setPostData] = useState({ lecturer: '', description: '', tags: [], selectedFile: '' });
     const post = useSelector((state) => currentId ? state.posts.find((p) => p._id === currentId) : null);
     const classes = useStyles();
     const dispatch = useDispatch();
@@ -43,11 +43,11 @@ const Form = ({ currentId, setCurrentId }) => {
 
     const clear = () => {
         setCurrentId(null);
-        setPostData({ lecturer: '', description: '', tags: '', selectedFile: '' });
+        setPostData({ lecturer: '', description: '', tags: [], selectedFile: '' });
     }
 
     return (
-        <Paper className={classes.paper}>
+        <Paper className={classes.paper} elevation={6}>
             <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
                 <Typography variant="h6">{currentId ? 'Editing' : 'Creating'} Dosen</Typography>
                 {/* <TextField name="creator" variant="outlined" label="Creator" fullWidth value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.target.value })}/> */}
