@@ -1,4 +1,4 @@
-# DoR
-## Dosen Review
+# DoR (Dosen Review)
+### PEMBUATAN WEBSITE REVIEW DOSEN UNTUK TRANSPARANSI DOSEN INSTITUT TEKNOLOGI BANDUNG
 
 SPARTA Milestone Project (Kelompok 13)
