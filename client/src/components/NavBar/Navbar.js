@@ -3,8 +3,9 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Button, Avatar } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
 
+import logo from '../../images/logo.png';
+import text from '../../images/text.png';
 import useStyles from './styles';
-import memories from "../../images/memories.png";
 import { LOGOUT } from '../../constants/actionTypes';
 
 const Navbar = () => {
@@ -16,10 +17,9 @@ const Navbar = () => {
 
     const logout = () => {
         dispatch({ type: LOGOUT });
-
-        setUser(null);
-        
         navigate('/auth');
+        window.location.reload();
+        setUser(null);
     }
 
     useEffect(() => {
@@ -38,10 +38,10 @@ const Navbar = () => {
 
     return (
         <AppBar className={classes.appBar} position="static" color="inherit">
-            <div className={classes.brandContainer}>
-                <Typography component={Link} to='/' className={classes.heading} variant="h2" align="center">Dosen ITB</Typography>
-                {/* <img className={classes.image} src={memories} alt="icon" /> */}
-            </div>
+            <Link to="/" className={classes.brandContainer}>
+                <img className={classes.image1} component={Link} to="/" src={text} alt="icon" />
+                <img className={classes.image2} src={logo} alt="icon" />
+            </Link>
             <Toolbar className={classes.toolbar}>
                 {user ? (
                     <div className={classes.profile}>

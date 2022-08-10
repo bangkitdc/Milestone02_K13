@@ -26,27 +26,31 @@ export const getPostsBySearch = async (req, res) => {
   
   try {
     const lecturer = new RegExp(searchQuery, 'i');
-
-    const posts = await PostMessage.find({ $or: [ { lecturer }, {tags: { $in: tags.split(',') } } ] });
-  
-    res.json({ data: posts });
-
+    
+    if (tags && searchQuery !== "none") {
+      const posts = await PostMessage.find({ $and: [ { lecturer }, { tags: { $in: tags.split(',') } } ]});
+      res.json({ data: posts });
+    } else {
+      const posts = await PostMessage.find({ $or: [ { lecturer }, { tags: { $in: tags.split(',') } } ]});
+      res.json({ data: posts });
+    }
   } catch (error) {
-    res.status(404).json({ message: error.message });   
+    res.status(404).json({ message: error.message });
+    console.log(error); 
   }
 }
 
-// export const getPost = async (req, res) => {
-//   const { id } = req.params;
+export const getPost = async (req, res) => {
+  const { id } = req.params;
 
-//   try {
-//     const post = await PostMessage.findById(id);
+  try {
+    const post = await PostMessage.findById(id);
 
-//     res.status(200).json(post);
-//   } catch (error) {
-//     res.status(404).json({ message: error.message });
-//   }
-// };
+    res.status(200).json(post);
+  } catch (error) {
+    res.status(404).json({ message: error.message });
+  }
+};
 
 export const createPost = async (req, res) => {
   const post = req.body;
@@ -115,5 +119,18 @@ export const likePost = async (req, res) => {
   });
   res.status(200).json(updatedPost);
 };
+
+export const commentPost = async (req, res) => {
+  const { id } = req.params;
+  const { value } = req.body;
+
+  const post = await PostMessage.findById(id);
+
+  post.comments.push(value);
+  
+  const updatedPost = await PostMessage.findByIdAndUpdate(id, post, { new: true });
+
+  res.json(updatedPost);
+}
 
 export default router;

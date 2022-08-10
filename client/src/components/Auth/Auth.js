@@ -5,7 +5,6 @@ import { useDispatch } from 'react-redux';
 import jwt_decode from 'jwt-decode';
 import { useNavigate } from 'react-router-dom';
 
-import Icon from './icon';
 import { AUTH } from "../../constants/actionTypes";
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import useStyles from './styles';
@@ -41,7 +40,6 @@ const Auth = () => {
     const switchMode = () => {
         setIsSingup((prevIsSignup) => !prevIsSignup);
         setShowPassword(false);
-
     };
     
     const googleSuccess = async (res) => {
@@ -123,12 +121,12 @@ const Auth = () => {
               cookiePolicy="single_host_origin"
             />
             </div>
-            <Grid container justifyContent="flex-end">
+            <Grid container justifyContent="center">
               <Grid item>
-                <Button onClick={switchMode}>
+                <Button onClick={switchMode} className={classes.lowerButton}>
                   {isSignup
                     ? "Already have an account? Sign In"
-                    : "Dont have an account? Sign Up"}
+                    : "Don't have an account? Sign Up"}
                 </Button>
               </Grid>
             </Grid>
