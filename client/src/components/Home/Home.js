@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate, useLocation } from 'react-router-dom';
 import ChipInput from 'material-ui-chip-input';
 
-import { getPosts, getPostsBySearch } from '../../actions/posts';
+import { getPostsBySearch } from '../../actions/posts';
 import Pagination from '../Pagination';
 import Posts from '../Posts/Posts';
 import Form from '../Form/Form';
@@ -27,7 +27,7 @@ const Home = () => {
     const [tags, setTags] = useState([]);
 
     const searchPost = () => {
-        if (search.trim() || tags) {
+        if (search.trim().length || tags.length) {
             dispatch(getPostsBySearch({ search, tags: tags.join(',') }));
             navigate(`/posts/search?searchQuery=${search || 'none'}&tags=${tags.join(',')}`);
         } else {
@@ -54,7 +54,7 @@ const Home = () => {
                     </Grid>
                     <Grid item xs={12} sm={6} md={3}>
                         <AppBar className={classes.appBarSearch} position="static" color="inherit">
-                            <TextField name="search" variant="outlined" label="Search Lecturer" fullWidth value={search} onChange={(e) => setSearch(e.target.value)} onKeyPress={handleKeyPress}/>
+                            <TextField name="search" variant="outlined" label="Search Dosen" fullWidth value={search} onChange={(e) => setSearch(e.target.value)} onKeyPress={handleKeyPress}/>
                             <ChipInput className={classes.chipInput} value={tags} onAdd={handleAdd} onDelete={handleDelete} label="Search Tags" variant="outlined" />
                             <Button onClick={searchPost} className={classes.searchButton} variant="contained" color="primary">Search</Button>
                         </AppBar>
