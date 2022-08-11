@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Avatar, Paper, Grid, Typography, Container, Button } from '@material-ui/core';
+
 import { useGoogleLogin } from "@react-oauth/google";
 import { useDispatch } from 'react-redux';
 // import jwt_decode from 'jwt-decode';
@@ -90,7 +91,6 @@ const Auth = () => {
         onError: googleFailure,
     });
 
-
     return (
       <Container component="main" maxWidth="xs">
         <Paper className={classes.paper} elevation={3}>
@@ -117,6 +117,8 @@ const Auth = () => {
                     handleChange={handleChange}
                     half
                   />
+                  <Input name="firstName" label="First Name" handleChange={handleChange} autoFocus half />
+                  <Input name="lastName" label="Last Name" handleChange={handleChange} half />
                 </>
               )}
               <Input
@@ -150,10 +152,16 @@ const Auth = () => {
             >
               {isSignup ? "Sign Up" : "Sign In"}
             </Button>
+
               {/* <GoogleLogin
               shape="circle"
               type="icon"
               theme="filled_blue"
+            <div className={classes.googleButton}>
+                <GoogleLogin
+            //   shape="circle"
+            //   type="icon"
+            //   theme="filled_blue"
               text="continue_with"
               onSuccess={googleSuccess}
               onError={googleFailure}
@@ -172,7 +180,7 @@ const Auth = () => {
     
             <Grid container justifyContent="center">
               <Grid item>
-                <Button onClick={switchMode}>
+                <Button onClick={switchMode} className={classes.lowerButton}>
                   {isSignup
                     ? "Already have an account? Sign In"
                     : "Don't have an account? Sign Up"}
