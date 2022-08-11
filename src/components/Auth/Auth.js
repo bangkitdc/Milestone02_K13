@@ -152,21 +152,6 @@ const Auth = () => {
             >
               {isSignup ? "Sign Up" : "Sign In"}
             </Button>
-
-              {/* <GoogleLogin
-              shape="circle"
-              type="icon"
-              theme="filled_blue"
-            <div className={classes.googleButton}>
-                <GoogleLogin
-            //   shape="circle"
-            //   type="icon"
-            //   theme="filled_blue"
-              text="continue_with"
-              onSuccess={googleSuccess}
-              onError={googleFailure}
-              cookiePolicy="single_host_origin"
-            /> */}
             
             <Button
                 className={classes.googleButton}
