@@ -28,7 +28,6 @@ const Navbar = () => {
         if (token) {
             if (token.exp < new Date().getTime()) {
                 logout();
-                alert('Your Google API token has expired.')
             }
         }
         
