@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { Avatar, Paper, Grid, Typography, Container, Button } from '@material-ui/core';
-import { GoogleLogin } from "@react-oauth/google";
+import { useGoogleLogin } from "@react-oauth/google";
 import { useDispatch } from 'react-redux';
-import jwt_decode from 'jwt-decode';
+// import jwt_decode from 'jwt-decode';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+
+import Icon from './icon';
 
 import { AUTH } from "../../constants/actionTypes";
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
@@ -42,13 +45,33 @@ const Auth = () => {
         setShowPassword(false);
     };
     
-    const googleSuccess = async (res) => {
+    // const googleSuccess = async (res) => {
+    //     const decoded = jwt_decode(res.credential);
+
+    //     const result = decoded;
+    //     const token = result.sub;
+    //     console.log(result);
+
+    //     try {
+    //         dispatch({ type: AUTH, data: { result, token } });
         
-        const decoded = jwt_decode(res.credential);
+    //         navigate('/');
+    //     } catch (error) {
+    //         console.log(error);
+    //     }
+    // };
 
-        const result = decoded;
+    const googleSuccess = async (tokenResponse) => {
+        const exp = { exp: ((1000 * (tokenResponse.expires_in)) + new Date().getTime()) };
+        const userInfo = await axios
+            .get('https://www.googleapis.com/oauth2/v3/userinfo', {
+                headers: { Authorization: `Bearer ${tokenResponse.access_token}` },
+            })
+            .then(res => res.data);
+        
+        const result = Object.assign(userInfo, exp)
         const token = result.sub;
-
+    
         try {
             dispatch({ type: AUTH, data: { result, token } });
         
@@ -61,6 +84,12 @@ const Auth = () => {
     const googleFailure = () => {
         console.log()
     };
+
+    const googleLogin = useGoogleLogin({
+        onSuccess: googleSuccess,
+        onError: googleFailure,
+    });
+
 
     return (
       <Container component="main" maxWidth="xs">
@@ -75,8 +104,19 @@ const Auth = () => {
             <Grid container spacing={2}>
               {isSignup && (
                 <>
-                  <Input name="firstName" label="First Name" handleChange={handleChange} autoFocus half />
-                  <Input name="lastName" label="Last Name" handleChange={handleChange} half />
+                  <Input
+                    name="firstName"
+                    label="First Name"
+                    handleChange={handleChange}
+                    autoFocus
+                    half
+                  />
+                  <Input
+                    name="lastName"
+                    label="Last Name"
+                    handleChange={handleChange}
+                    half
+                  />
                 </>
               )}
               <Input
@@ -110,20 +150,29 @@ const Auth = () => {
             >
               {isSignup ? "Sign Up" : "Sign In"}
             </Button>
-            <div className={classes.googleButton}>
-                <GoogleLogin
-            //   shape="circle"
-            //   type="icon"
-            //   theme="filled_blue"
+              {/* <GoogleLogin
+              shape="circle"
+              type="icon"
+              theme="filled_blue"
               text="continue_with"
               onSuccess={googleSuccess}
               onError={googleFailure}
               cookiePolicy="single_host_origin"
-            />
-            </div>
+            /> */}
+            
+            <Button
+                className={classes.googleButton}
+                startIcon={<Icon />}
+                fullWidth
+                variant="text"
+                onClick={() => googleLogin()}
+                >
+                Sign in with Google
+            </Button>
+    
             <Grid container justifyContent="center">
               <Grid item>
-                <Button onClick={switchMode} className={classes.lowerButton}>
+                <Button onClick={switchMode}>
                   {isSignup
                     ? "Already have an account? Sign In"
                     : "Don't have an account? Sign Up"}

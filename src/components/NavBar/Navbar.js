@@ -23,12 +23,12 @@ const Navbar = () => {
     }
 
     useEffect(() => {
-        const token = user?.token;
+        const token = user?.result;
 
         if (token) {
-            
-            if (token.exp * 1000 < new Date().getTime()) {
+            if (token.exp < new Date().getTime()) {
                 logout();
+                alert('Your Google API token has expired.')
             }
         }
         
@@ -45,7 +45,7 @@ const Navbar = () => {
             <Toolbar className={classes.toolbar}>
                 {user ? (
                     <div className={classes.profile}>
-                        <Avatar className={classes.purple} alt={user.result.given_name} src={user.result.picture}>{user.result.name.charAt(0) || user.result.given_name.charAt(0)}</Avatar>
+                        <Avatar className={classes.purple} alt={user.result.given_name} src={user.result.picture} referrerPolicy="no-referrer">{user.result.name.charAt(0) || user.result.given_name.charAt(0)}</Avatar>
                         <Typography className={classes.userName} variant="h6">{user.result.name || user.result.given_name}</Typography>
                         <Button variant="contained" className={classes.logout} color="secondary" onClick={logout}>Logout</Button>
                     </div>

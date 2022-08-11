@@ -26,8 +26,11 @@ export default makeStyles((theme) => ({
   },
   googleButton: {
     marginBottom: theme.spacing(2),
+    transition: "background-color .3s, box-shadow .3s",
+    border: "none",
+    boxShadow: "0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25)",
+    color: "#757575",
+    fontWeight: "500",
+    fontFamily: "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif",
   },
-  lowerButton: {
-    textTransform: 'none',
-  }
 }));
