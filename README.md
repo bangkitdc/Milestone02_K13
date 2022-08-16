@@ -1,12 +1,18 @@
 # Milestone02_K13
 
+## DoR
+Merupakan solusi dari masalah yang kami, Kelompok 13, temukan dari lingkungan sekitar kami. DoR merupakan singkatan dari Dosen Review, dimana solusi kami adalah dalam bentuk produk sebuah website. DoR diciptakan untuk mewadahi informasi tentang dosen yang dapat membantu pembelajaran mahasiswa, seperti metode pembelajaran dosen tersebut, tugas yang biasanya ia berikan, dan sebagainya. Kami harap, dengan adanya DoR, informasi mengenai hal - hal tersebut dapat diakses dengan mudah untuk seluruh mahasiswa sehingga dapat membuat mahasiswa lebih siap dalam menghadapi mata kuliah yang bersangkutan.
+
 ## Anggota Kelompok :
 | Nama Anggota   | NIM | Kontribusi |
 | :---        |    :----:   | :---: |
 | Dwicakra Danielle      | 16521135 | PowerPoint |
 | Marcel Ryan Antony   | 16521343 | |
-| Raden Dizi Assyafadi Putra | 16521456 | | UI & Frontend
+| Raden Dizi Assyafadi Putra | 16521456 | | UI & Frontend |
 | Gracia Theophilia | 16521430 | |
+| Marcel Ryan Antony   | 16521343 | | PowerPoint |
+| Raden Dizi Assyafadi Putra | 16521456 | |
+| Gracia Theophilia | 16521430 | PowerPoint |
 | Fahrian Afdholi | 16521492 | |
 | Farah Kharana Haniifah | 16521288 | |
 | Dzikri Muhammad Raditya Putra | 16521360 | |
@@ -15,8 +21,8 @@
 | Muhammad Bangkit Dwi Cahyono | 16521149 | Frontend & Backend |
 | Fazel Ginanda  | 16521426 | |
 | Muhammad Haidar Akita Tresnadi | 16521522 | |
-| Iskandar Muda Rizky Parlambang | 16521440 | |
-| Tara Chandani Haryono | 16521428 | |
+| Iskandar Muda Rizky Parlambang | 16521440 | Powerpoint |
+| Tara Chandani Haryono | 16521428 | Powerpoint |
 | Fajar Maulana H | 16521104 | Markdown |
 
 ## Code Structure (*Penting untuk panitia SPARTA)
