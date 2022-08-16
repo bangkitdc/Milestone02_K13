@@ -13,7 +13,7 @@ Merupakan solusi dari masalah yang kami, Kelompok 13, temukan dari lingkungan se
 | Fahrian Afdholi | 16521492 | PowerPoint & Testing |
 | Farah Kharana Haniifah | 16521288 | About Page Content |
 | Dzikri Muhammad Raditya Putra | 16521360 | |
-| Sulthan Dzaky Alfaro | 16521357 | PowerPoint |
+| Sulthan Dzaky Alfaro | 16521357 | PowerPoint & Testing |
 | Raditya Naufal Abiyu | 16521534 | Prototype & design |
 | Muhammad Bangkit Dwi Cahyono | 16521149 | Frontend & Backend |
 | Muhammad Haidar Akita Tresnadi | 16521522 | Powerpoint & Handle 404, routes error |
