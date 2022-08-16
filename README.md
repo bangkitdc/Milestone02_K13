@@ -16,7 +16,6 @@ Merupakan solusi dari masalah yang kami, Kelompok 13, temukan dari lingkungan se
 | Sulthan Dzaky Alfaro | 16521357 | |
 | Raditya Naufal Abiyu | 16521534 | Prototype & design |
 | Muhammad Bangkit Dwi Cahyono | 16521149 | Frontend & Backend |
-| Fazel Ginanda  | 16521426 | |
 | Muhammad Haidar Akita Tresnadi | 16521522 | Powerpoint & Handle 404, routes error |
 | Iskandar Muda Rizky Parlambang | 16521440 | Powerpoint |
 | Tara Chandani Haryono | 16521428 | Powerpoint |
