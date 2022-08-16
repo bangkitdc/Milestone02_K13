@@ -5,7 +5,7 @@
 | :---        |    :----:   | :---: |
 | Dwicakra Danielle      | 16521135 | PowerPoint |
 | Marcel Ryan Antony   | 16521343 | |
-| Raden Dizi Assyafadi Putra | 16521456 | |
+| Raden Dizi Assyafadi Putra | 16521456 | | UI & Frontend
 | Gracia Theophilia | 16521430 | |
 | Fahrian Afdholi | 16521492 | |
 | Farah Kharana Haniifah | 16521288 | |
