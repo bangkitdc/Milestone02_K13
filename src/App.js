@@ -1,5 +1,5 @@
-import React from 'react';
-import { Container, ThemeProvider } from '@material-ui/core';
+import React from "react";
+import { Container, ThemeProvider } from "@material-ui/core";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 
@@ -11,10 +11,17 @@ import Footer from './components/Footer/Footer';
 import PageNotFound from './components/PageNotFound/Pagenotfound';
 import About from './components/About/About';
 
-import theme from './theme';
+import PostDetails from "./components/PostDetails/PostDetails";
+import Navbar from "./components/NavBar/Navbar";
+import Home from "./components/Home/Home";
+import Auth from "./components/Auth/Auth";
+import Footer from "./components/Footer/Footer";
+
+
+import theme from "./theme";
 
 const App = () => {
-    const user = JSON.parse(localStorage.getItem('profile'));
+  const user = JSON.parse(localStorage.getItem("profile"));
 
     return (
         <GoogleOAuthProvider clientId={`${process.env.REACT_APP_PUBLIC_GOOGLE_API_TOKEN}`}>
