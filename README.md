@@ -14,7 +14,7 @@
 | Raditya Naufal Abiyu | 16521534 | Prototype & design |
 | Muhammad Bangkit Dwi Cahyono | 16521149 | Frontend & Backend |
 | Fazel Ginanda  | 16521426 | |
-| Muhammad Haidar Akita Tresnadi | 16521522 | |
+| Muhammad Haidar Akita Tresnadi | 16521522 | Powerpoint |
 | Iskandar Muda Rizky Parlambang | 16521440 | Powerpoint |
 | Tara Chandani Haryono | 16521428 | |
 | Fajar Maulana H | 16521104 | Markdown |
@@ -30,5 +30,4 @@ Untuk updated code dapat dilihat di branch ```frontend``` dan branch ```backend`
 - https://dosenreview.herokuapp.com/
 
 ## Implementasi Solusi :
-- https://itbdsti-my.sharepoint.com/:p:/g/personal/18221092_mahasiswa_itb_ac_id/ESQLlDFb0pVLhI4BJfiAzPABu7qqrYPXlwBB3XB-frg8Lg?e=L5VMeX
 
