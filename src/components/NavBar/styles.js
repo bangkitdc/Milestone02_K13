@@ -30,16 +30,6 @@ export default makeStyles((theme) => ({
   toolbar: {
     padding: 0,
   },
-  profile: {
-    display: "flex",
-    justifyContent: "space-between",
-    width: "400px",
-    alignItems: "center",
-    [theme.breakpoints.down("sm")]: {
-      width: "auto",
-      justifyContent: "space-between",
-    },
-  },
   userName: {
     display: "flex",
     alignItems: "center",
