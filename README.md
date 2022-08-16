@@ -8,7 +8,7 @@ Merupakan solusi dari masalah yang kami, Kelompok 13, temukan dari lingkungan se
 | :---        |    :----:   | :---: |
 | Dwicakra Danielle      | 16521135 | PowerPoint |
 | Marcel Ryan Antony   | 16521343 | PowerPoint |
-| Raden Dizi Assyafadi Putra | 16521456 | | UI & Frontend |
+| Raden Dizi Assyafadi Putra | 16521456 | UI & Frontend |
 | Gracia Theophilia | 16521430 | PowerPoint |
 | Fahrian Afdholi | 16521492 | PowerPoint |
 | Farah Kharana Haniifah | 16521288 | About Page Content |
