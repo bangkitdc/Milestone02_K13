@@ -13,7 +13,7 @@ Merupakan solusi dari masalah yang kami, Kelompok 13, temukan dari lingkungan se
 | Marcel Ryan Antony   | 16521343 | | PowerPoint |
 | Raden Dizi Assyafadi Putra | 16521456 | |
 | Gracia Theophilia | 16521430 | PowerPoint |
-| Fahrian Afdholi | 16521492 | |
+| Fahrian Afdholi | 16521492 | PowerPoint |
 | Farah Kharana Haniifah | 16521288 | |
 | Dzikri Muhammad Raditya Putra | 16521360 | |
 | Sulthan Dzaky Alfaro | 16521357 | |
