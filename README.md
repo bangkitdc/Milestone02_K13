@@ -1,6 +1,6 @@
 # Milestone02_K13
 
-Anggota Kelompok :
+## Anggota Kelompok :
 | Nama Anggota   | NIM | Kontribusi |
 | :---        |    :----:   | :---: |
 | Dwicakra Danielle      | 16521135 | PowerPoint |
