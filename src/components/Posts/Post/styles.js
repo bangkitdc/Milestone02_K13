@@ -43,6 +43,7 @@ export default makeStyles({
   },
   lecturer: {
     padding: "0 16px",
+    fontWeight: 600,
   },
   cardActions: {
     padding: "0 16px 8px 16px",
