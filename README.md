@@ -7,6 +7,9 @@ Merupakan solusi dari masalah yang kami, Kelompok 13, temukan dari lingkungan se
 | Nama Anggota   | NIM | Kontribusi |
 | :---        |    :----:   | :---: |
 | Dwicakra Danielle      | 16521135 | PowerPoint |
+| Marcel Ryan Antony   | 16521343 | |
+| Raden Dizi Assyafadi Putra | 16521456 | | UI & Frontend |
+| Gracia Theophilia | 16521430 | |
 | Marcel Ryan Antony   | 16521343 | | PowerPoint |
 | Raden Dizi Assyafadi Putra | 16521456 | |
 | Gracia Theophilia | 16521430 | PowerPoint |
