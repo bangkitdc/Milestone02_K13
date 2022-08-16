@@ -29,6 +29,6 @@ Untuk updated code dapat dilihat di branch ```frontend``` dan branch ```backend`
 ## Application:
 - https://dosenreview.herokuapp.com/
 
-## PowerPoint : 
+## Implementasi Solusi :
 - https://itbdsti-my.sharepoint.com/:p:/g/personal/18221092_mahasiswa_itb_ac_id/ESQLlDFb0pVLhI4BJfiAzPABu7qqrYPXlwBB3XB-frg8Lg?e=L5VMeX
 
