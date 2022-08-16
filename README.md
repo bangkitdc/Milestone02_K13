@@ -27,9 +27,6 @@ Server (Conect to MongoDB):
 UI (App):
 - https://dosenreview.herokuapp.com/
 
-<<<<<<< HEAD
-
-=======
 PowerPoint : 
 - https://itbdsti-my.sharepoint.com/:p:/g/personal/18221092_mahasiswa_itb_ac_id/ESQLlDFb0pVLhI4BJfiAzPABu7qqrYPXlwBB3XB-frg8Lg?e=L5VMeX
->>>>>>> a0e003fcde75b28ef8248128c36a0db19587c34d
+
