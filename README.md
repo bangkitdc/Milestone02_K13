@@ -6,7 +6,7 @@
 | Dwicakra Danielle      | 16521135 | PowerPoint |
 | Marcel Ryan Antony   | 16521343 | |
 | Raden Dizi Assyafadi Putra | 16521456 | |
-| Gracia Theophilia | 16521430 | |
+| Gracia Theophilia | 16521430 | PowerPoint |
 | Fahrian Afdholi | 16521492 | |
 | Farah Kharana Haniifah | 16521288 | |
 | Dzikri Muhammad Raditya Putra | 16521360 | |
