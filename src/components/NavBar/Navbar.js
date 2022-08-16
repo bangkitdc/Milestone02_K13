@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Button, Avatar } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
@@ -7,6 +7,7 @@ import logo from '../../images/logo.png';
 import text from '../../images/text.png';
 import useStyles from './styles';
 import { LOGOUT } from '../../constants/actionTypes';
+import "./styles.css";
 
 const Navbar = () => {
     const classes = useStyles();
@@ -34,6 +35,9 @@ const Navbar = () => {
         setUser(JSON.parse(localStorage.getItem("profile")));
     }, [location]);
 
+    const dropdownRef = useRef(null);
+    const [isActive, setIsActive] = useState(false);
+    const profClick = () => setIsActive(!isActive);
 
     return (
         <AppBar className={classes.appBar} position="static" color="inherit">
@@ -43,11 +47,20 @@ const Navbar = () => {
             </Link>
             <Toolbar className={classes.toolbar}>
                 {user ? (
-                    <div className={classes.profile}>
-                        <Avatar className={classes.purple} alt={user.result.given_name} src={user.result.picture} referrerPolicy="no-referrer">{user.result.name.charAt(0) || user.result.given_name.charAt(0)}</Avatar>
-                        <Avatar className={classes.purple} alt={user.result.given_name} src={user.result.picture}>{user.result.name.charAt(0) || user.result.given_name.charAt(0)}</Avatar>
-                        <Typography className={classes.userName} variant="h6">{user.result.name || user.result.given_name}</Typography>
-                        <Button variant="contained" className={classes.logout} color="secondary" onClick={logout}>Logout</Button>
+                    <div className={"menu-container"}>
+                        <button onClick={profClick} className="menu-trigger">
+                            <Typography className={classes.userName} variant="subtitle1">{user.result.name || user.result.given_name}</Typography>
+                            <Avatar className={classes.purple} alt={user.result.given_name} src={user.result.picture} referrerPolicy="no-referrer">{user.result.name.charAt(0) || user.result.given_name.charAt(0)}</Avatar>
+                        </button>
+                        <nav ref={dropdownRef} className={`menu ${isActive ? "active" : "inactive"}`}>
+                        <ul>
+                            <li>
+                                <div className='logout-btn' onClick={logout}>
+                                    Logout
+                                </div>
+                            </li>
+                        </ul>
+                        </nav>
                     </div>
                 ) : (
                     <Button component={Link} to='/auth' variant="contained" color="primary">Sign In</Button>

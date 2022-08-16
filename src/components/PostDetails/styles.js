@@ -28,12 +28,7 @@ export default makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       marginLeft: 0,
     },
-  },
-  recommendedPosts: {
-    display: "flex",
-    [theme.breakpoints.down("sm")]: {
-      flexDirection: "column",
-    },
+    marginLeft: "10px",
   },
   loadingPaper: {
     display: "flex",
@@ -48,15 +43,29 @@ export default makeStyles((theme) => ({
     width: "100%",
     overflowY: "auto",
   },
+  recommendedPosts: {
+    marginTop: "20px",
+  },
   recommend: {
-    margin: "20px",
     cursor: "pointer",
-    flex: 1,
   },
   writeComment: {
     width: "100%",
   },
   buttonComment: {
     marginTop: "10px",
+  },
+  recImg: {
+    width: "120px",
+    height: "120px",
+    objectFit: "cover",
+    boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
+    borderRadius: "6px",
+  },
+  recCard: {
+    background: "#F8F7F3",
+    "&:hover": {
+      boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2)",
+    },
   },
 }));

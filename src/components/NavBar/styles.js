@@ -50,6 +50,7 @@ export default makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       display: "none",
     },
+    margin: "0 10px",
   },
   brandContainer: {
     display: "flex",
@@ -58,8 +59,5 @@ export default makeStyles((theme) => ({
   purple: {
     color: theme.palette.getContrastText(deepPurple[500]),
     backgroundColor: deepPurple[500],
-    [theme.breakpoints.down("sm")]: {
-      marginRight: "10px",
-    },
   },
 }));

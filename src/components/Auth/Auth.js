@@ -157,11 +157,6 @@ const Auth = () => {
               shape="circle"
               type="icon"
               theme="filled_blue"
-            <div className={classes.googleButton}>
-                <GoogleLogin
-            //   shape="circle"
-            //   type="icon"
-            //   theme="filled_blue"
               text="continue_with"
               onSuccess={googleSuccess}
               onError={googleFailure}

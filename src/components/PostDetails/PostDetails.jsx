@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Paper, Typography, CircularProgress, Divider, Grid } from '@material-ui/core';
+import { Paper, Typography, CircularProgress, Divider, Grid, Card, CardContent } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
 import moment from 'moment';
 import { useParams, useNavigate } from 'react-router-dom';
@@ -58,17 +58,21 @@ const PostDetails = () => {
                 <div className={classes.section}>
                     <Typography gutterBottom variant="h5">Similar dosen you might also like:</Typography>
                     <Divider />
-                    <div className={classes.recommendedPosts}>
+                    <Grid container spacing={2} className={classes.recommendedPosts}>
                         {recommendedPosts.map(({ lecturer, description, name, likes, selectedFile, _id }) => (
-                            <div className={classes.recommend} onClick={() => openPost(_id)} key={_id}>
-                                <Typography gutterBottom variant="h6">{lecturer}</Typography>
-                                <Typography gutterBottom variant="subtitle2">{name}</Typography>
-                                <Typography gutterBottom variant="subtitle2">{description.split(' ').splice(0, 18).join(' ')}...</Typography>
-                                <Typography gutterBottom variant="subtitle1">Likes: {likes.length}</Typography>
-                                <img src={selectedFile} height="120"/>
-                            </div>
+                            <Grid item xs={12} md={6} lg={3} className={classes.recommend} onClick={() => openPost(_id)} key={_id}>
+                                <Card className={classes.recCard}>
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h6">{lecturer.split(' ').splice(0, 4).join(' ')}...</Typography>
+                                        <Typography gutterBottom variant="subtitle2">{name}</Typography>
+                                        <Typography gutterBottom variant="subtitle2">{description.split(' ').splice(0, 12).join(' ')}...</Typography>
+                                        <Typography gutterBottom variant="subtitle1">Likes: {likes.length}</Typography>
+                                        <img src={selectedFile} className={classes.recImg}/>
+                                    </CardContent>
+                                </Card>
+                            </Grid>
                         )).filter((item, i) => i < 4)}
-                    </div>
+                    </Grid>
                 </div>
             )}
         </Paper>
