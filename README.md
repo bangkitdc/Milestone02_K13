@@ -21,7 +21,7 @@ Merupakan solusi dari masalah yang kami, Kelompok 13, temukan dari lingkungan se
 | Tara Chandani Haryono | 16521428 | Powerpoint |
 | Fajar Maulana H | 16521104 | Markdown |
 
-## Code Structure (*Penting untuk panitia SPARTA)
+## Code Structure (*Penting untuk panitia SPARTA*)
 Untuk updated code dapat dilihat di branch ```frontend``` dan branch ```backend``` dikarenakan src dalam bentuk folder, sulit untuk dimerge.
 
 ## Server (Conect to MongoDB):
