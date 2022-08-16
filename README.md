@@ -16,7 +16,7 @@
 | Fazel Ginanda  | 16521426 | |
 | Muhammad Haidar Akita Tresnadi | 16521522 | |
 | Iskandar Muda Rizky Parlambang | 16521440 | Powerpoint |
-| Tara Chandani Haryono | 16521428 | |
+| Tara Chandani Haryono | 16521428 | Powerpoint |
 | Fajar Maulana H | 16521104 | Markdown |
 
 ## Code Structure (*Penting untuk panitia SPARTA)
