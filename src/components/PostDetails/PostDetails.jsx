@@ -61,11 +61,11 @@ const PostDetails = () => {
                     <Grid container spacing={2} className={classes.recommendedPosts}>
                         {recommendedPosts.map(({ lecturer, description, name, likes, selectedFile, _id }) => (
                             <Grid item xs={12} md={6} lg={3} className={classes.recommend} onClick={() => openPost(_id)} key={_id}>
-                                <Card className={classes.recCard}>
+                                <Card className={classes.recCard} elevation={2}>
                                     <CardContent>
-                                        <Typography gutterBottom variant="h6">{lecturer.split(' ').splice(0, 4).join(' ')}...</Typography>
+                                        <Typography gutterBottom variant="h6">{lecturer.split(' ').splice(0, 3).join(' ')}...</Typography>
                                         <Typography gutterBottom variant="subtitle2">{name}</Typography>
-                                        <Typography gutterBottom variant="subtitle2">{description.split(' ').splice(0, 12).join(' ')}...</Typography>
+                                        <Typography gutterBottom variant="subtitle2">{description.split(' ').splice(0, 10).join(' ')}...</Typography>
                                         <Typography gutterBottom variant="subtitle1">Likes: {likes.length}</Typography>
                                         <img src={selectedFile} className={classes.recImg}/>
                                     </CardContent>
