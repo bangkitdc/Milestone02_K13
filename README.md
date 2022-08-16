@@ -31,3 +31,6 @@ Untuk updated code dapat dilihat di branch ```frontend``` dan branch ```backend`
 
 ## PowerPoint : 
 - https://itbdsti-my.sharepoint.com/:p:/g/personal/18221092_mahasiswa_itb_ac_id/ESQLlDFb0pVLhI4BJfiAzPABu7qqrYPXlwBB3XB-frg8Lg?e=L5VMeX
+
+## Working Prototype : 
+- https://www.figma.com/proto/x3EjwJEqmLBtAxVq5ue6K1/Untitled?node-id=1%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2
