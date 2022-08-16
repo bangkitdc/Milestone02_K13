@@ -6,7 +6,7 @@
 | Dwicakra Danielle      | 16521135 | PowerPoint |
 | Marcel Ryan Antony   | 16521343 | |
 | Raden Dizi Assyafadi Putra | 16521456 | |
-| Gracia Theophilia | 16521430 | |
+| Gracia Theophilia | 16521430 | PowerPoint |
 | Fahrian Afdholi | 16521492 | |
 | Farah Kharana Haniifah | 16521288 | |
 | Dzikri Muhammad Raditya Putra | 16521360 | |
@@ -15,7 +15,7 @@
 | Muhammad Bangkit Dwi Cahyono | 16521149 | Frontend & Backend |
 | Fazel Ginanda  | 16521426 | |
 | Muhammad Haidar Akita Tresnadi | 16521522 | |
-| Iskandar Muda Rizky Parlambang | 16521440 | |
+| Iskandar Muda Rizky Parlambang | 16521440 | Powerpoint |
 | Tara Chandani Haryono | 16521428 | |
 | Fajar Maulana H | 16521104 | Markdown |
 
