@@ -7,11 +7,8 @@ Merupakan solusi dari masalah yang kami, Kelompok 13, temukan dari lingkungan se
 | Nama Anggota   | NIM | Kontribusi |
 | :---        |    :----:   | :---: |
 | Dwicakra Danielle      | 16521135 | PowerPoint |
-| Marcel Ryan Antony   | 16521343 | |
+| Marcel Ryan Antony   | 16521343 | PowerPoint |
 | Raden Dizi Assyafadi Putra | 16521456 | | UI & Frontend |
-| Gracia Theophilia | 16521430 | |
-| Marcel Ryan Antony   | 16521343 | | PowerPoint |
-| Raden Dizi Assyafadi Putra | 16521456 | |
 | Gracia Theophilia | 16521430 | PowerPoint |
 | Fahrian Afdholi | 16521492 | PowerPoint |
 | Farah Kharana Haniifah | 16521288 | |
@@ -19,7 +16,6 @@ Merupakan solusi dari masalah yang kami, Kelompok 13, temukan dari lingkungan se
 | Sulthan Dzaky Alfaro | 16521357 | |
 | Raditya Naufal Abiyu | 16521534 | Prototype & design |
 | Muhammad Bangkit Dwi Cahyono | 16521149 | Frontend & Backend |
-| Fazel Ginanda  | 16521426 | |
 | Muhammad Haidar Akita Tresnadi | 16521522 | |
 | Iskandar Muda Rizky Parlambang | 16521440 | Powerpoint |
 | Tara Chandani Haryono | 16521428 | Powerpoint |
