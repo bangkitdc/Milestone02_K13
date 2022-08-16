@@ -1,5 +1,8 @@
 # Milestone02_K13
 
+## DoR
+Merupakan solusi dari masalah yang kami, Kelompok 13, temukan dari lingkungan sekitar kami. DoR merupakan singkatan dari Dosen Review, dimana solusi kami adalah dalam bentuk produk sebuah website. DoR diciptakan untuk mewadahi informasi tentang dosen yang dapat membantu pembelajaran mahasiswa, seperti metode pembelajaran dosen tersebut, tugas yang biasanya ia berikan, dan sebagainya. Kami harap, dengan adanya DoR, informasi mengenai hal - hal tersebut dapat diakses dengan mudah untuk seluruh mahasiswa sehingga dapat membuat mahasiswa lebih siap dalam menghadapi mata kuliah yang bersangkutan.
+
 ## Anggota Kelompok :
 | Nama Anggota   | NIM | Kontribusi |
 | :---        |    :----:   | :---: |
