@@ -6,20 +6,20 @@ Merupakan solusi dari masalah yang kami, Kelompok 13, temukan dari lingkungan se
 ## Anggota Kelompok :
 | Nama Anggota   | NIM | Kontribusi |
 | :---        |    :----:   | :---: |
-| Dwicakra Danielle      | 16521135 | PowerPoint |
-| Marcel Ryan Antony   | 16521343 | PowerPoint |
+| Dwicakra Danielle      | 16521135 | PowerPoint & Testing |
+| Marcel Ryan Antony   | 16521343 | PowerPoint & Testing |
 | Raden Dizi Assyafadi Putra | 16521456 | UI & Frontend |
-| Gracia Theophilia | 16521430 | PowerPoint |
-| Fahrian Afdholi | 16521492 | PowerPoint |
+| Gracia Theophilia | 16521430 | PowerPoint & Testing |
+| Fahrian Afdholi | 16521492 | PowerPoint & Testing |
 | Farah Kharana Haniifah | 16521288 | About Page Content |
 | Dzikri Muhammad Raditya Putra | 16521360 | |
 | Sulthan Dzaky Alfaro | 16521357 | |
 | Raditya Naufal Abiyu | 16521534 | Prototype & design |
 | Muhammad Bangkit Dwi Cahyono | 16521149 | Frontend & Backend |
 | Muhammad Haidar Akita Tresnadi | 16521522 | Powerpoint & Handle 404, routes error |
-| Iskandar Muda Rizky Parlambang | 16521440 | Powerpoint |
-| Tara Chandani Haryono | 16521428 | Powerpoint |
-| Fajar Maulana H | 16521104 | Markdown |
+| Iskandar Muda Rizky Parlambang | 16521440 | Powerpoint & Testing |
+| Tara Chandani Haryono | 16521428 | Powerpoint & Testing |
+| Fajar Maulana H | 16521104 | Markdown & Testing |
 
 ## Code Structure (*Penting untuk panitia SPARTA)
 Untuk updated code dapat dilihat di branch ```frontend``` dan branch ```backend``` dikarenakan src dalam bentuk folder, sulit untuk dimerge.
