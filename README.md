@@ -12,7 +12,7 @@ Merupakan solusi dari masalah yang kami, Kelompok 13, temukan dari lingkungan se
 | Gracia Theophilia | 16521430 | PowerPoint & Testing |
 | Fahrian Afdholi | 16521492 | PowerPoint & Testing |
 | Farah Kharana Haniifah | 16521288 | About Page Content |
-| Dzikri Muhammad Raditya Putra | 16521360 | |
+| Dzikri Muhammad Raditya Putra | 16521360 | Footer |
 | Sulthan Dzaky Alfaro | 16521357 | PowerPoint & Testing |
 | Raditya Naufal Abiyu | 16521534 | Prototype & design |
 | Muhammad Bangkit Dwi Cahyono | 16521149 | Frontend & Backend |
