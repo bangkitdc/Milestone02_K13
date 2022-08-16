@@ -15,7 +15,7 @@
 | Muhammad Bangkit Dwi Cahyono | 16521149 | Frontend & Backend |
 | Fazel Ginanda  | 16521426 | |
 | Muhammad Haidar Akita Tresnadi | 16521522 | |
-| Iskandar Muda Rizky Parlambang | 16521440 | |
+| Iskandar Muda Rizky Parlambang | 16521440 | Powerpoint |
 | Tara Chandani Haryono | 16521428 | |
 | Fajar Maulana H | 16521104 | Markdown |
 
