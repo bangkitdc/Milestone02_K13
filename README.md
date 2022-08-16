@@ -11,7 +11,7 @@ Anggota Kelompok :
 | Farah Kharana Haniifah | 16521288 | |
 | Dzikri Muhammad Raditya Putra | 16521360 | |
 | Sulthan Dzaky Alfaro | 16521357 | |
-| Raditya Naufal Abiyu | 16521534 | Prototype |
+| Raditya Naufal Abiyu | 16521534 | Prototype & design |
 | Muhammad Bangkit Dwi Cahyono | 16521149 | Frontend & Backend |
 | Fazel Ginanda  | 16521426 | |
 | Muhammad Haidar Akita Tresnadi | 16521522 | |
