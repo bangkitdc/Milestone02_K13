@@ -1,0 +1,17 @@
+.P-FOOTER {
+    display : flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: orange;
+    align-items: center;
+    font-size: larger;
+
+}
+
+.A-FOOTER:hover { 
+    background-color: tomato;
+    transition: .5s ease-in-out;
+    transition-delay: .3s;
+    border-radius: 8px;
+
+}
